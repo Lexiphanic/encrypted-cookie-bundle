@@ -27,6 +27,12 @@ class EncryptedCookieListenerSpec extends ObjectBehavior
         $this->beConstructedWith(['session'], $encryption);
     }
     
+    function it_should_have_a_getter_and_setter_for_encryption (EncryptionInterface $encryption) {
+        $this->beConstructedWith();
+        $this->setEncrypter($encryption)->shouldReturn(null);
+        $this->getEncrypter()->shouldReturn($encryption);
+    }
+    
     function it_should_return_null_if_not_master_request_on_filter_response_event (
             FilterResponseEvent $event
     ) {
