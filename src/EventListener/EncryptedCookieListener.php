@@ -77,4 +77,14 @@ class EncryptedCookieListener
         return in_array($name, $this->cookieNames, true);
     }
 
+    public function setEncrypter(EncryptionInterface $encrypter = null)
+    {
+        $this->encrypter = $encrypter;
+    }
+
+    public function getEncrypter()
+    {
+        return $this->encrypter;
+    }
+
 }
