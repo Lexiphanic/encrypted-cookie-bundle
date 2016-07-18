@@ -1,0 +1,23 @@
+{
+    "name": "lexiphanic/encrypted-cookie-bundle",
+    "description": "Encrypted Cookie Bundle",
+    "keywords": ["security", "symfony", "bundle", "cookie"],
+    "authors": [
+        {
+            "name": "Paul Hutchinson",
+            "homepage": "https://lexiphanic.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lexiphanic\\EncryptedCookieBundle\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/framework-bundle": "~3.0",
+        "symfony/security": "~3.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^3.0"
+    }
+}
