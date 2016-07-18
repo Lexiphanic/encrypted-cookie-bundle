@@ -13,7 +13,7 @@ Two event listeners are added, one to the request and one for the response. The 
 
 Installation
 ---
-Add the project to composer (`composer require lexiphanic/encrypted-cookie-bundle`) then add `Lexiphanic\EncrypedCookieBundle\EncrypedCookieBundle()` to your `AppKernel`.
+Add the project to composer (`composer require lexiphanic/encrypted-cookie-bundle`) then add `Lexiphanic\EncryptedCookieBundle\LexiphanicEncryptedCookieBundle()` to your `AppKernel`.
 
 Configuration
 ---
