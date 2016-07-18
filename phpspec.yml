@@ -1,0 +1,5 @@
+suites:
+    inventory_suite:
+        namespace: Lexiphanic\EncryptedCookieBundle
+        psr4_prefix: Lexiphanic\EncryptedCookieBundle
+
