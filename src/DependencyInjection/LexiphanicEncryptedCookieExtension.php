@@ -24,8 +24,8 @@ class LexiphanicEncryptedCookieExtension extends Extension
             'Lexiphanic\EncryptedCookieBundle\EventListener\EncryptedCookieListener',
             ['%lexiphanic_encrypted_cookie.cookies%', new Reference($config['encryption']['service'])]
         );
-        $listener->addTag('kernel.event_listener', ['event' => 'kernal.request', 'method' => 'onKernelRequest', 'priority' => 8192]);
-        $listener->addTag('kernel.event_listener', ['event' => 'kernal.response', 'method' => 'onKernelResponse', 'priority' => -8192]);
+        $listener->addTag('kernel.event_listener', ['event' => 'kernel.request', 'method' => 'onKernelRequest', 'priority' => 8192]);
+        $listener->addTag('kernel.event_listener', ['event' => 'kernel.response', 'method' => 'onKernelResponse', 'priority' => -8192]);
         $container->setDefinition('lexiphanic.encrypted_cookie_listener', $listener);
     }
 }
